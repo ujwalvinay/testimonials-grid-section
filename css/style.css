@@ -1,0 +1,116 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+body
+{
+    background: hsl(0, 0%, 87%);
+}
+.testimonials
+{
+    padding:2rem;
+    gap: 1rem;
+
+}
+.testimonials > *
+{
+    border-radius: 10px;
+}
+.banner
+{
+    display: flex;
+}
+.name-title
+{
+    padding-left: 1rem;
+    align-self: center;
+}
+img
+{
+    border-radius: 50%;
+    width: 5%;
+}
+.profile-pic
+{
+    width:40px;
+    height: fit-content;
+}
+h3
+{
+    padding: 1rem 0;
+
+    font-size: 25px;
+}
+
+/*-----------------font-design-----------------------*/
+.h3-white
+{
+    color: white;
+}
+.h4-white
+{
+    color: white;
+}
+p
+{
+    opacity: 0.6;
+}
+.p-white
+{
+    color: white;
+    opacity: 0.6;
+}
+/*--------------------- testimony design----------------------------*/
+
+.testimony-daniel
+{
+    background-color: hsl(263, 55%, 52%);
+    background-image: url('bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: 90%  10%;
+
+    padding: 2rem;
+}
+.testimony-johnathan
+{
+    background-color: hsl(217, 19%, 35%);
+    padding: 2rem;
+}
+.testimonials-jeanette
+{
+    background: white;
+    padding: 2rem;
+}
+.testimonials-patrick
+{
+    background:hsl(219, 29%, 14%);
+    padding: 2rem;
+}
+.testimonials-kira
+{
+    background: white;
+    padding: 2rem;
+}
+/*--------------------------------------grid-design--------------------------------*/
+.testimonials
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+    
+}
+.grid-col-span2
+{
+    grid-column: span 2;
+}
+
+.testimonials div:last-child
+{
+    grid-column:4/5 ;
+    grid-row: 1/3;
+}
