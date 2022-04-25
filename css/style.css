@@ -10,6 +10,7 @@ body
 }
 .testimonials
 {
+    display: grid;
     padding:2rem;
     gap: 1rem;
 
@@ -94,11 +95,13 @@ p
     padding: 2rem;
 }
 /*--------------------------------------grid-design--------------------------------*/
-.testimonials
+
+@media only screen and (min-width: 800px) {
+    .testimonials
 {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
+    
     padding-block: 2rem;
     width: min(95%, 70rem);
     margin-inline: auto;
@@ -114,3 +117,4 @@ p
     grid-column:4/5 ;
     grid-row: 1/3;
 }
+  }
